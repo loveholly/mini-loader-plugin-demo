@@ -11,13 +11,13 @@ const fileLoader = name => ({
 
 module.exports = [
   {
-    test: /\.js$/,
-    include: path.resolve(__dirname, '../plugin'),
+    test: /\.ts$/,
+    // include: path.resolve(__dirname, '../plugin'),
     exclude: path.resolve(__dirname, '../node_modules'),
     use: [
-      'cache-loader',
-      'babel-loader',
-      // 'eslint-loader',
+      // 'cache-loader',
+      // 'babel-loader',
+      'ts-loader',
     ],
   },
   {
@@ -39,12 +39,6 @@ module.exports = [
     use: [
       fileLoader('[path][name].wxss'),
       'sass-loader'
-    ]
-  },
-  {
-    test: /\.pcss$/,
-    use: [
-      fileLoader('[path][name].wxss')
     ]
   },
   {

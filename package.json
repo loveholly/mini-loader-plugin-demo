@@ -29,6 +29,7 @@
     "@babel/plugin-proposal-throw-expressions": "^7.2.0",
     "@babel/plugin-transform-runtime": "^7.5.0",
     "@babel/preset-env": "^7.5.0",
+    "@babel/preset-typescript": "^7.3.3",
     "@babel/runtime": "^7.5.1",
     "autoprefixer": "^8.5.0",
     "babel-eslint": "^8.2.3",
@@ -45,10 +46,12 @@
     "file-loader": "^1.1.11",
     "fs-extra": "^4.0.2",
     "gh-pages": "^1.1.0",
-    "mini-program-webpack-loader": "^0.2.11",
+    "mini-program-webpack-loader": "https://github.com/realywithoutname/mini-program-webpack-loader.git#feature/ts",
     "node-sass": "^4.9.0",
     "rimraf": "^2.6.2",
     "sass-loader": "^7.0.3",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.3",
     "webpack": "^4.35.2",
     "webpack-bundle-analyzer": "^2.13.1",
     "webpack-cli": "^3.0.8",
@@ -59,5 +62,9 @@
     "url": ""
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "rxjs": "^6.5.2",
+    "weui-miniprogram": "^0.1.6"
+  }
 }

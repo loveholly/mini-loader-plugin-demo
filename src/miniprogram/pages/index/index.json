@@ -1,5 +1,7 @@
 {
   "usingComponents": {
-    "live-player": "plugin://my-plugin/live-player"
+    "live-player": "components/live-player/index",
+    "we-dialog": "weui/dialog/dialog",
+    "we-searchbar": "weui/searchbar/searchbar"
   }
 }

@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const baseResolve = require('./webpack.config.base.resolve');
 const baseLoaders = require('./webpack.config.base.loaders');
+const MiniProgramPlugin = require('mini-program-webpack-loader').plugin;
 
 module.exports = {
   mode: 'development',
